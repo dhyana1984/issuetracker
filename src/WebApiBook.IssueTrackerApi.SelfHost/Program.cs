@@ -17,7 +17,7 @@ namespace WebApiBook.IssueTrackerApi.SelfHost
     {
         static void Main(string[] args)
         {
-            var config = new HttpSelfHostConfiguration("http://localhost:8080");
+            var config = new HttpSelfHostConfiguration("http://localhost:8888");
             WebApiConfiguration.Configure(config);
             var host = new HttpSelfHostServer(config);
             host.OpenAsync().Wait();
